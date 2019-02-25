@@ -1,0 +1,12 @@
+{
+  "name": "monoroku",
+  "scripts": {
+    "postinstall": "(cd client && npm i) && (cd server && npm i) && npm run build",
+    "build": "(cd client && npm run build)",
+    "start": "(cd server && npm start)"
+  },
+  "cacheDirectories": [
+    "server/node_modules",
+    "client/node_modules"
+  ]
+}
